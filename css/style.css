@@ -1,0 +1,158 @@
+.svgAstrol {
+    height: 300px;
+    margin-top: 150px;
+    margin-left:150px;
+    overflow: visible !important;
+}
+
+path.st2 {
+    animation: Engordar 2s ease infinite;
+}
+
+path.patica1, path.patica2 {
+    animation: Engordar 2s ease infinite;
+    animation: Caminar 2s ease infinite;
+}
+
+path.mano1 {
+    animation: ManoI 1s ease infinite;
+}
+
+path.mano2 {
+    animation: ManoD 1s ease infinite;
+}
+
+path.ojo1 {
+    animation: OjoI 1s ease infinite;
+}
+
+g.contenido-divujito {
+    animation: OjoI 1s ease infinite;
+    animation: Salatr 5s ease infinite;
+}
+
+@keyframes Engordar {
+    0% {
+        transform: scale(1.0);
+    }
+
+    50% {
+        transform: scale(1.04);
+    }
+
+    10% {
+        transform: scale(1.0);
+    }
+}
+
+@keyframes Caminar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes ManoI {
+    0% {
+        transform: translateY(0px);
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(5px);
+        transform: rotateZ(3deg);
+    }
+
+    100% {
+        transform: translateY(0px);
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes ManoD {
+    0% {
+        transform: translateY(0px);
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-5px);
+        transform: rotateZ(-3deg);
+    }
+
+    100% {
+        transform: translateY(0px);
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes OjoI {
+    0% {
+        transform-origin: right;
+        transform: translateZ(0px);
+        //transform: rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(3px);
+        transform: rotateZ(1deg);
+    }
+
+    100% {
+        transform: translateZ(0px);
+        //transform: rotate(0deg);
+    }
+}
+
+@keyframes Salatr {
+    0% {
+        transform: translate(0px,0px);
+    }
+
+    10% {
+        transform: translate(200px,100px);
+    }
+
+    20% {
+        transform: translate(400px,-150px);
+    }
+
+    30% {
+        transform: translate(600px,120px);
+    }
+
+    40% {
+        transform: translate(800px,-90px);
+    }
+
+    50% {
+        transform: translate(1000px,100px);
+    }
+
+    60% {
+        transform: translate(800px,-90px);
+    }
+
+    70% {
+        transform: translate(600px,120px);
+    }
+
+    80% {
+        transform: translate(400px,-100px);
+    }
+
+    90% {
+        transform: translate(200px,150px);
+    }
+
+    100% {
+        transform: translate(0px,0px);
+    }
+}
